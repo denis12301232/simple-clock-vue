@@ -14,7 +14,7 @@
 
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
-import useTimer from '@/hooks/useTimer';
+import { useTimer } from '@/hooks';
 
 const { tick } = useTimer(calculate, 1000);
 const hoursArrow = ref<HTMLDivElement | null>(null);
